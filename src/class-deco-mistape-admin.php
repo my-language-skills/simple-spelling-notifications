@@ -151,23 +151,7 @@ class Deco_Mistape_Admin extends Deco_Mistape_Abstract {
 					</span>
 				</p>
 				<div id="mistape-sidebar">
-					<div id="deco_products" class="postbox deco-right-sidebar-widget">
-						<h3 class="hndle">
-							<span><?php printf( _x( "%s's products", "deco.agency's products", 'mistape' ), '<a class="decoagency" href="https://deco.agency">deco.agency</a>' ) ?> </span>
-						</h3>
-						<div class="inside">
-							<a class="deco_button decomments" href="http://decomments.com/" target="_blank">
-								<span>de:comments</span>
-							</a>
-							<a class="deco_button debranding" href="https://wordpress.org/plugins/debranding/"
-							   target="_blank">
-								<span>de:branding</span>
-							</a>
-							<a class="deco_button deadblocker" href="http://deadblocker.com/" target="_blank">
-								<span>deAdblocker</span>
-							</a>
-						</div>
-					</div>
+					<!-- DELETE -->
 					<?php if ( $show_changelog ) { ?>
 						<div id="mistape_info" class="postbox deco-right-sidebar-widget">
 							<h3 class="hndle">
@@ -199,19 +183,7 @@ class Deco_Mistape_Admin extends Deco_Mistape_Abstract {
 								echo ' <strong>' . $reports_count . '</strong>';
 								?>
 							</p>
-							<?php if ( ! class_exists( 'Deco_Mistape_Table_Addon' ) ) { ?>
-								<p class="hover-image mistape-icon-after-question"
-								   data-img-url="<?php echo MISTAPE__PLUGIN_URL . '/assets/img/mistape-pro-table-list.png'; ?>">
-									<?php _e( 'Detailed mistake statistics is available in Mistape PRO', 'mistape' ); ?>
-								</p>
-								<p>
-									<?php _e( 'An option to mark notification as resolved, archive, delete from the table in one click', 'mistape' ); ?>
-								</p>
-								<a href="#!" class="button button-primary paddle_button" data-product="508163"
-								   data-quantity="1" data-allow-quantity="false">
-									<?php _e( 'Buy PRO for just', 'mistape' ); ?>
-									<span class="cost-block">15</span>!</a>
-							<?php } ?>
+					<!-- DELETE -->
 						</div>
 					</div>
 				</div>
